@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Royal\n"
+"POT-Creation-Date: 2014-03-21 11:16+0700\n"
+"PO-Revision-Date: 2014-03-21 11:17+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _e;__\n"
+
+#: content.php:25 single.php:52
+msgid "0"
+msgstr ""
+
+#: content.php:25 single.php:52
+msgid "1"
+msgstr ""
+
+#: content.php:25 single.php:52
+msgid "%"
+msgstr ""
+
+#: content.php:74 includes/child-functions.php:235
+msgid "Read More"
+msgstr ""
+
+#: content.php:76
+msgid "In"
+msgstr ""
+
+#: footer.php:107
+msgid "About Us"
+msgstr ""
+
+#: footer.php:121
+msgid "Recent Comments"
+msgstr ""
+
+#: footer.php:135
+msgid "Recent Posts"
+msgstr ""
+
+#: footer.php:149
+msgid "Meta"
+msgstr ""
+
+#: footer.php:175
+msgid "Copyright"
+msgstr ""
+
+#: footer.php:176
+msgid " Designed by"
+msgstr ""
+
+#: footer.php:176
+msgid "http://www.templatesquare.com"
+msgstr ""
+
+#: footer.php:176
+msgid "TemplateSquare.com"
+msgstr ""
+
+#: single.php:203
+msgid "Pages:"
+msgstr ""
+
+#: single.php:208
+msgid "In "
+msgstr ""
+
+#: single.php:212
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
+
+#: single.php:213
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: single.php:230
+msgid "About The Author"
+msgstr ""
+
+#: single.php:231
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: includes/child-functions.php:51
+msgid "Post Sidebar"
+msgstr ""
+
+#: includes/child-functions.php:53
+msgid "Located at the left/right side of archives, single and search."
+msgstr ""
+
+#: includes/child-functions.php:61
+msgid "Content Top"
+msgstr ""
+
+#: includes/child-functions.php:63 includes/child-functions.php:83
+msgid "Located at the top of the content."
+msgstr ""
+
+#: includes/child-functions.php:71
+msgid "Content Bottom"
+msgstr ""
+
+#: includes/child-functions.php:73 includes/child-functions.php:93
+#: includes/child-functions.php:103
+msgid "Located at the bottom of the content."
+msgstr ""
+
+#: includes/child-functions.php:81
+msgid "Main Top"
+msgstr ""
+
+#: includes/child-functions.php:91
+msgid "Main Bottom"
+msgstr ""
+
+#: includes/child-functions.php:101
+msgid "Bottom"
+msgstr ""
+
+#: includes/child-functions.php:119
+msgid "Styles"
+msgstr ""
+
+#: includes/child-functions.php:122
+msgid "Your Own Background"
+msgstr ""
+
+#: includes/child-functions.php:123
+msgid ""
+"You can set your own background for your theme from here. It will overwrite "
+"the default theme background"
+msgstr ""
+
+#: includes/child-metaboxes.php:20
+msgid "Page Settings"
+msgstr ""
+
+#: includes/child-metaboxes.php:27
+msgid "Page Title"
+msgstr ""
+
+#: includes/child-metaboxes.php:28
+msgid "Enter your custom page title to show on heading."
+msgstr ""
+
+#: includes/child-metaboxes.php:34
+msgid "Page Description"
+msgstr ""
+
+#: includes/child-metaboxes.php:35
+msgid "Enter your custom page description to show on heading."
+msgstr ""

@@ -1,0 +1,187 @@
+/* #Media Queries
+================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (min-width: 959px) {
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+	.camera_prev {left: 46%!important;}
+	.camera_next {right: 46%!important;}
+
+	/* Room */
+	.flexslider:hover .flex-next {opacity: 1; right: 44%!important;}
+	.flexslider:hover .flex-prev {opacity: 1; left: 44%!important;}
+	#postgallery  ul.flex-direction-nav a.flex-prev{
+		left: 44%!important;
+	}
+	#postgallery  ul.flex-direction-nav a.flex-next{
+		right: 44%!important;
+	 }
+	 
+	 
+	/* entry-gallery */
+	.entry-gallery .flexslider:hover .flex-next {opacity: 1; right: 42%!important;}
+	.entry-gallery .flexslider:hover .flex-prev {opacity: 1; left: 42%!important;}
+	.entry-gallery  #postgallery  ul.flex-direction-nav a.flex-prev{
+		left: 42%!important;
+	}
+	.entry-gallery  #postgallery  ul.flex-direction-nav a.flex-next{
+		right: 42%!important;
+	 }
+	 
+	 .gallery-columns-3 .gallery-item { width: 27.5%; }
+	 .gallery-columns-2 .gallery-item { width: 44%; }
+	 .gallery-columns-4 .gallery-item { width: 19%; }
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	/* entry-gallery */
+	.entry-gallery .flexslider:hover .flex-next {opacity: 1; right: 40%!important;}
+	.entry-gallery .flexslider:hover .flex-prev {opacity: 1; left: 40%!important;}
+	.entry-gallery  #postgallery  ul.flex-direction-nav a.flex-prev{
+		left: 40%!important;
+	}
+	.entry-gallery  #postgallery  ul.flex-direction-nav a.flex-next{
+		right: 40%!important;
+	 }
+
+	.gallery-columns-3 .gallery-item { width: 26.5%; }
+	 .gallery-columns-2 .gallery-item { width: 43.5%; }
+	 .gallery-columns-4 .gallery-item { width: 17%; }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none;
+		width: 100%; min-width: 0; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
+		
+	.container{ margin: 0px auto; max-width: 420px; }
+	
+	.row { width: auto; min-width: 0; margin-left: 0; margin-right: 0; }
+
+	.row .column, .row .columns { width: 100%; float: none; }
+
+	.column:last-child, .columns:last-child { float: none; }
+	[class*="column"] + [class*="column"]:last-child { float: none; }
+
+	.column:before, .columns:before, .column:after, .columns:after { content: ""; display: table; }
+	.column:after, .columns:after { clear: both; }
+	
+	#bodychild{
+	max-width:460px;
+	margin:0 auto;
+	}
+
+	/*============================================== HEADER SECTION ==============================================*/
+	#logo{text-align:center; float:none!important; display:block; }
+	.logo-light {  height: 100px; left: -100px;}
+	#logo img{ float:none!important; display:inline-block!important; }
+	.logo-light{ display:none!important}
+	#topright{display:none;}
+
+	
+	#navigation{text-align:center; clear:both; height:auto; padding-top:0px; padding-bottom:15px; float:none}
+	#nav-wrap{ background:none!important;}
+	.sf-menu a{background:transparent!important; border:0!important;}
+	.sf-menu > li{border:0 !important; display:none;}
+	nav{margin:0; float:none; }
+	.js .tinynav { display: block; text-align:left ; margin:15px 0 0 0; width:100%; }/* mobile dropdown */
+    .js #topnav { display: none }
+	
+	#header #searchform{ margin:10px 0;}
+		
+	/*============================================== SLIDER SECTION ==============================================*/
+		#slider .slider-title{ font-size:25px; line-height:30px;}
+		#slider .slidertext{ display:none}
+		#slider #slideritems{ padding-bottom:100px;}
+		#slider .camera_caption{ bottom:-110px; top:auto; }
+		.camera_prev {left: 40%;}
+		.camera_next {right: 40%;}
+	
+	/*============================================== CONTENT SECTION ==============================================*/
+	.main{padding-right:0;}
+	#maincontent.positionleft .main{padding-left:0; padding-right:0}
+	#content.positionright .main{padding-left:0; padding-right:0}
+	#content.positionright { background:none}
+	#content.positionleft { background:none}
+	#content.positionleft .widget-contenttop, #content.positionleft .widget-contentbottom{ margin-right:0px;}
+	#content.positionright .widget-contenttop, #content.positionright .widget-contentbottom{ margin-right:0px; margin-left:0px}
+
+	
+	.newslatter{padding:14px 20px 10px;}
+	
+	.flexslider-carousel ul.flex-direction-nav a{ top:70px;}
+	
+	.content-about img{ float:none}
+	
+	.entry-utility{ float:none}
+	.articlecontainer{ margin:20px 0px 0px 0px}
+	
+	.gallery .gallery-item { margin-bottom:30px;}
+	.gallery-columns-2 .gallery-item, 
+	.gallery-columns-3 .gallery-item,
+	.gallery-columns-4 .gallery-item { width:100%; margin-right:0px; float:none}
+	
+	div.wpcf7{ margin-bottom:30px!important}
+	
+	.content-home img.frame {
+	margin: 0px 40px 20px 0;
+	}
+	
+	/* Room */
+	.flexslider:hover .flex-next {opacity: 1; right: 40%;}
+	.flexslider:hover .flex-prev {opacity: 1; left: 40%;}
+	#postgallery  ul.flex-direction-nav a.flex-prev{
+		left: 40%;
+	}
+	#postgallery  ul.flex-direction-nav a.flex-next{
+		right: 40%;
+	 }
+
+
+	/*============================================== BLOG SECTION ==============================================*/
+	.wp-pagenavi{margin-bottom:30px;}
+	.postimg{margin-right:0px; width:100%;}
+	#post-content .icon{ margin-right:25px}
+	
+	#sidebar.positionright, #contnet.positionright { background:none}
+	#sidebar.positionleft, #content.positionleft  { background:none}
+	#sidebar.positionright div.widget-area, #sidebar.positionleft div.widget-area{ padding:0px; margin:0px; background:none}
+
+	.widget-container #searchform #s{ width:87%}
+	
+	#entry-author-info #author-avatar{margin: 15px 0 0 0px;}
+	#entry-author-info #author-description{margin: 15px 0px 10px 110px;}
+	
+	#singlepost .articlecontainer{ margin-left:0px}
+	
+	/*============================================== Footer ==============================================*/
+	#copyright{ margin-bottom:0px; text-align:center; padding-top:25px;}
+
+	
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	
+}
+		
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+		
+	.main{padding:0px!important;}
+	blockquote{ margin:0px 0px 20px!important;}
+	.commentlist ol{ padding-left:35px;}
+	
+
+
+
+}
