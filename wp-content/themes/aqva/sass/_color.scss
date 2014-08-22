@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6{color:#636363;}
 
 .sf-menu > li.current-menu-item, .sf-menu > li.current_page_item, 
 .sf-menu > li.current-menu-ancestor, .sf-menu > li.current-menu-parent, .sf-menu > li.current_page_ancestor, 
-.sf-menu > li.current_page_parent{border-top: 3px solid #e5e1e1;}/* 1st level */
+.sf-menu > li.current_page_parent{border-top: 3px solid $colormain;}/* 1st level */
 
 .sf-menu > li a { }
 .sf-sub-indicator{ }
