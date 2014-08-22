@@ -1,0 +1,8 @@
+/* color */
+$colormain:#57C5CF;
+
+@mixin flexible-left($elementHeight) {
+    margin-left: ($elementHeight / (-2));
+}
+
+

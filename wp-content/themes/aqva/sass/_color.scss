@@ -18,7 +18,7 @@ body {color:#757575; background:url(../images/bg-body.png)}
 
 /*======================================= GENERAL =======================================*/
 /* Link color */
-a, .colortext{color:#c1767b;}
+a, .colortext{color:$colormain;}
 a:hover, a.colortext:hover, .colortext a:hover{color:#bfbfbf;}
 #logo h1 a, #logo h1 a:visited{color:#fff;}
 #logo .desc{ color:#f78f7b; }
@@ -30,13 +30,13 @@ h1, h2, h3, h4, h5, h6{color:#636363;}
 .pagedesc{ color:#a6a6a6}
 
 /*======================================= HEADER SECTION =======================================*/
-.header-wrap{ border-top: 10px solid #e5e1e1;}
+.header-wrap{ border-top: 10px solid $colormain;}
 #nav-wrap{ border-top:1px solid #e5e1e1; border-bottom:1px solid #e5e1e1}
 
 .sf-menu a, .sf-menu a:visited{color: #9e9e9e; }/* 1st level */
 .sf-menu a:hover, .sf-menu li.current-menu-item > a, .sf-menu li.current_page_item > a, 
 .sf-menu li.current-menu-ancestor > a, .sf-menu li.current-menu-parent > a, .sf-menu li.current_page_ancestor > a, 
-.sf-menu li.current_page_parent > a{color:#c1767b;}/* 1st level */
+.sf-menu li.current_page_parent > a{color:$colormain;}/* 1st level */
 
 .sf-menu > li.current-menu-item, .sf-menu > li.current_page_item, 
 .sf-menu > li.current-menu-ancestor, .sf-menu > li.current-menu-parent, .sf-menu > li.current_page_ancestor, 
@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6{color:#636363;}
 .sf-menu li li a, .sf-menu li li a:visited {color:#757575; border:0px}
 .sf-menu li li{ border-bottom:1px solid #e5e1e1}
 .sf-menu ul {background:#f0eded; border-color:#e5e1e1;}
-.sf-menu li li:hover{ background:#c1767b}
+.sf-menu li li:hover{ background:$colormain}
 .sf-menu li li a:hover, sf-menu li.current li a{color:#fff;}
 
 .tinynav{background:#fff; border:1px solid #ececec}
@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6{color:#636363;}
 
 /*============================================== CONTENT SECTION ==============================================*/
 
-.content-home h3, .content-about h5{ color:#c1767b}
+.content-home h3, .content-about h5{ color:$colormain}
 
 
 /* Slider Room Detail */
@@ -112,12 +112,12 @@ hr {
 
 /* Button */
 a.more-link, a.more-link:visited,
-a.more, a.more:visited{ color:#c1767b; border-bottom:1px solid #efddde}
+a.more, a.more:visited{ color:$colormain; border-bottom:1px solid #efddde}
 a.more-link:hover,
 a.more:hover{ color:#757575!important; border-bottom:1px solid #757575}
 
 .button, .button:visited, input[type="submit"]{
-	background: #c1767b; 
+	background: $colormain; 
 	color:#fff!important;
 }
 .button:hover, input[type="submit"]:hover{
@@ -160,7 +160,7 @@ blockquote{color:#aeaeae;}
 
 .sticky .posttitle{background:url(../images/sticky.png) no-repeat 2px 8px}
 
-.posttitle a, .posttitle a:visited{color:#c1767b;}
+.posttitle a, .posttitle a:visited{color:$colormain;}
 .posttitle a:hover{color:#757575;}
 
 article.post .articlecontainer.nometa{ border:0px; }
@@ -170,7 +170,7 @@ article.post .articlecontainer{border-bottom:1px solid #d6d6d6;}
 .entry-comment a, entry-comment a:visited{color:#fff}
 .commentlist li.comment{ }
 .comment-body .time{color:#898989;}
-.comment-body .time a, .comment-body .time a:visited{color:#c1767b;}
+.comment-body .time a, .comment-body .time a:visited{color:$colormain;}
 .comment-body .time a:hover{color:#222222;}
 
 .entry-utility{ color:#898989;}
@@ -203,15 +203,15 @@ h3#comments-title:after{ color:#eee;}
 
 
 /* Post Format */
-.entry-quote blockquote{background-color:#c1767b; color:#fff;}
-.aside{ border-left:4px solid #c1767b}
+.entry-quote blockquote{background-color:$colormain; color:#fff;}
+.aside{ border-left:4px solid $colormain}
 
 
 /* Page Nav */
 .wp-pagenavi{}
 .wp-pagenavi .pages{}
 .wp-pagenavi a, .wp-pagenavi a:visited{background-color:#e5e1e1; color:#757575; border:1px solid #e5e1e1!important;}
-.wp-pagenavi .current, .wp-pagenavi a:hover{ background-color:#c1767b; color:#fff; border:1px solid #c1767b!important;}
+.wp-pagenavi .current, .wp-pagenavi a:hover{ background-color:$colormain; color:#fff; border:1px solid $colormain!important;}
 
 
 /* WIDGET CUSTOM
@@ -224,30 +224,30 @@ h3#comments-title:after{ color:#eee;}
 #sidebar .klasik-advancedpost-widget .recent-title a,
 .klasik-advancedpost-widget .recent-title a, .klasik-advancedpost-widget .recent-title a:visited{ color:#535353;}
 #sidebar .klasik-advancedpost-widget .recent-title a:hover,
-.klasik-advancedpost-widget .recent-title a:hover{color:#c1767b;}
+.klasik-advancedpost-widget .recent-title a:hover{color:$colormain;}
 .klasik-advancedpost-widget .recent-item{ border-bottom:1px solid #e5e1e1}
 .klasik-advancedpost-widget .recent-thumb img{ border:5px solid #f8f6f6}
 
 /*======== recent post ========*/
 .klasik-recentpost-widget .recent-item{ }
 .klasik-recentpost-widget .recent-title a, .klasik-recentpost-widget .recent-title a:visited{ color:#757575}
-.klasik-recentpost-widget .recent-title a:hover{color:#c1767b; }
+.klasik-recentpost-widget .recent-title a:hover{color:$colormain; }
 
-#sidebar .klasik-recentpost-widget .recent-title a, #sidebar .klasik-recentpost-widget .recent-title a:visited{ color:#c1767b;}
-#sidebar .klasik-recentpost-widget .recent-title a:hover{color:#c1767b;}
+#sidebar .klasik-recentpost-widget .recent-title a, #sidebar .klasik-recentpost-widget .recent-title a:visited{ color:$colormain;}
+#sidebar .klasik-recentpost-widget .recent-title a:hover{color:$colormain;}
 
 .klasik-recentpost-widget .smalldate{ color:#999;}
 
 /*======== FEATURE SECTION =========*/
 .klasik-features .feature-title a{color:#535353;}
-.klasik-features .feature-title a:hover{color:#c1767b;}
+.klasik-features .feature-title a:hover{color:$colormain;}
 .klasik-features .img-container{ padding:20px;}
 .img-container{ border:5px solid #f8f6f6; background:#e5e1e1}
 
 /*======== PORTFOLIO SECTION ========*/
 
 #filter li a{color:#000; }
-#filter li.current a, #filter li a:hover{color:#c1767b; }
+#filter li.current a, #filter li a:hover{color:$colormain; }
 #filter li {
     position: relative;
     z-index: 10;
@@ -271,13 +271,13 @@ h3#comments-title:after{ color:#eee;}
 .klasik-pf-text .pftitle a:hover{color:#535353;} 
 
 .klasik-pf-text .button-link .button{ background:#c88f93; color:#fff}
-.klasik-pf-text .button-link .button:hover{ background:#fff; color:#c1767b !important;}
+.klasik-pf-text .button-link .button:hover{ background:#fff; color:$colormain !important;}
 
 /*=== Testimonials Widget ===*/
 .klasik-testimonial-widget .testi-img{border:1px solid #e5e1e1; background:#fff}
 .klasik-testimonial-widget .testi-quote{ background:#fff; color:#757575; border:1px solid #e5e1e1}
 .klasik-testimonial-widget .testi-title{ color:#535353}
-.klasik-testimonial-widget .testi-tag{ color:#c1767b}
+.klasik-testimonial-widget .testi-tag{ color:$colormain}
 .klasik-testimonial-widget .testi-arrow{background: url(../images/testi-arrow.png) no-repeat bottom;}
 
 
@@ -285,7 +285,7 @@ h3#comments-title:after{ color:#eee;}
 .klasik-team-widget .team-title, .klasik-team-widget .team-title a{color:#535353;}
 .klasik-team-widget .team-title a:hover{color:#535353}
 .klasik-team-widget .item-container{ background:#f8f6f6; color:#757575 }
-.klasik-team-widget .team-tag{ color:#c1767b}
+.klasik-team-widget .team-tag{ color:$colormain}
 .klasik-team-widget .team-text{ border-top:1px solid #e7e3e3}
 
 /*=== Tabs Widget ===*/
@@ -293,7 +293,7 @@ h3#comments-title:after{ color:#eee;}
     color: #a5a5a5;
 }
 .widget_klasik_tabs ul.tabs li.active a {
-    color: #c1767b;
+    color: $colormain;
 }
 .widget_klasik_tabs ul.tabs li.active {
     border-bottom: 1px solid #fff!important;
@@ -308,12 +308,12 @@ h3#comments-title:after{ color:#eee;}
 
 #sidebar li li{ background:url(../images/arrowlist.png) no-repeat 0 7px;}
 
-#sidebar li a{color:#c1767b}
+#sidebar li a{color:$colormain}
 #sidebar li a:hover{color:#757575;}
 
 /* Tag */
 .tagcloud a{background-color: #bfbfbf; color: #fff !important;}
-.tagcloud a:hover{background:#c1767b;}
+.tagcloud a:hover{background:$colormain;}
 
 
 /* Searchform */
@@ -330,7 +330,7 @@ input.searchbutton {
 /* newslatter */
 
 .newslatter{ background:#e5e1e1; }
-.newslatter h3{color:#c1767b;}
+.newslatter h3{color:$colormain;}
 .newslatter input[type="email"]{ border:1px solid #fff}
 
 
@@ -338,9 +338,9 @@ input.searchbutton {
 
 #footersidebar{ border-top:3px solid #e5e1e1; }
 #footersidebar li a{ color:#757575;}
-#footersidebar li a:hover{ color:#c1767b;}
+#footersidebar li a:hover{ color:$colormain;}
 
 #footer{ border-top:1px solid #e5e1e1; color:#999689}
 
 #outerfooter a{color:#a5a5a5;}
-#outerfooter a:hover{ color:#c1767b; }
+#outerfooter a:hover{ color:$colormain; }

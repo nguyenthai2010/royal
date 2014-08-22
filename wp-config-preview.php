@@ -16,13 +16,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'database_name_here');
+define('DB_NAME', 'taichinh_royal');
 
 /** MySQL database username */
-define('DB_USER', 'username_here');
+define('DB_USER', 'taichinh_royal');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'password_here');
+define('DB_PASSWORD', '@33EVO#~9Wt^');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         'fqA,U=SH-R,[+D CQ$JvfZ;|x3h@a=ZdnG:k*?0|>T&F<#+iCPUR Mq-~/%N/g:+');
+define('SECURE_AUTH_KEY',  'On%&vr-yN:b<=el`_1kcS+nZ[[<kac92i+Jz_?%`UQN_[t<a+HmB/6W:Z5RmLN#2');
+define('LOGGED_IN_KEY',    'ys|hJz@5J1:!dp-c4e#gWu8E7Jk~--k4kViTS<InK!f(XJy_`I$+cBq3^An|<_iu');
+define('NONCE_KEY',        'oKwHk|mo!~[@3(@$?LgZq>@Ec{1LP#7.oH46fSl&T<V+q2UnuP+aYSrD&~Z2~:jJ');
+define('AUTH_SALT',        'RZX)[!TDa<cj#lf0Z)RGUZ:)9AFHi[79sQ_ar;}qf;#Ox>xl3^ag.p-E+t)*FbAD');
+define('SECURE_AUTH_SALT', 'o}(8Jd-6aA|F][YEL*|e1`9[ |{NF=G0LMpJq5_nE5s<P![R6}jILcCr1li68l9!');
+define('LOGGED_IN_SALT',   ' W@IsdB>n<uoxf&|Db^|:I8N{m5A}6!!Q1.t9B-}ozyZ@>^$&/6{id;Jc7@pxA_H');
+define('NONCE_SALT',       '?x_OZqNd4g^0=M&H!FBHH{eUg+-9vwBeTMNU5svYDR0^s+<(SNrh*Ae*vHhwOCsk');
 
 /**#@-*/
 
@@ -85,6 +85,9 @@ define('WP_DEBUG', false);
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
+
+define('WP_HOME','http://royal.taichinh-24h.com');
+define('WP_SITEURL','http://royal.taichinh-24h.com');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
