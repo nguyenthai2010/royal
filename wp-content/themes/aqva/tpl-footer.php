@@ -8,25 +8,54 @@
                         	<div class="row"> 
                             <div id="footcol1"  class="three columns">
                                 <div class="widget-area">
-                                    <div class="widget-bottom"><ul><li id="nav_menu-2" class="widget-container widget_nav_menu"><h3 class="widget-title">Customer Services</h3><div class="menu-customer-services-container"><ul id="menu-customer-services" class="menu"><li id="menu-item-355" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-355"><a href="#">FAQ</a></li>
+                                    <div class="widget-bottom"><ul><li id="nav_menu-2" class="widget-container widget_nav_menu"><h3 class="widget-title">Customer Services</h3>
+                                    
+                                    <div class="menu-customer-services-container"><!--<ul id="menu-customer-services" class="menu"><li id="menu-item-355" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-355"><a href="#">FAQ</a></li>
 <li id="menu-item-356" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-356"><a href="#">Returns</a></li>
 <li id="menu-item-357" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-357"><a href="#">Careers</a></li>
-</ul></div><div class="clear"></div></li></ul><div class="clear"></div></div>                                </div>
+</ul>-->
+										<?php
+                                            
+                                            $defaults = array(
+                                              'container'       => 'ul', 
+                                              'menu_class'      => 'menu',
+                                              'menu_id'         => 'menu-customer-services', 
+                                              'depth'           => 0,
+                                              'sort_column'    => 'menu_order',
+                                              'fallback_cb'     => 'nav_page_fallback',
+                                              'theme_location' => 'footer_col1' 
+                                            );
+                                            
+                                            wp_nav_menu( $defaults );
+                                            
+                                        ?>
+									</div>
+
+									<div class="clear"></div></li></ul><div class="clear"></div></div>                                </div>
                             </div>
                             <div id="footcol2"  class="three columns">
                                  <div class="widget-area">
-                                 	<div class="widget-bottom"><ul><li id="nav_menu-3" class="widget-container widget_nav_menu"><h3 class="widget-title">About</h3><div class="menu-about-container"><ul id="menu-about" class="menu"><li id="menu-item-358" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-358"><a href="#">Press</a></li>
-<li id="menu-item-365" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-365"><a href="#">Affiliates</a></li>
-<li id="menu-item-366" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-366"><a href="#">Terms/Conditions</a></li>
-</ul></div><div class="clear"></div></li></ul><div class="clear"></div></div>                                </div>
+                                 	<div class="widget-bottom"><ul><li id="nav_menu-3" class="widget-container widget_nav_menu"><h3 class="widget-title">About</h3>
+                                    
+                                    <div class="menu-about-container">
+                                    										<?php
+                                            
+                                            $defaults = array(
+                                              'container'       => 'ul', 
+                                              'menu_class'      => 'menu',
+                                              'menu_id'         => 'menu-about', 
+                                              'depth'           => 0,
+                                              'sort_column'    => 'menu_order',
+                                              'fallback_cb'     => 'nav_page_fallback',
+                                              'theme_location' => 'footer_col2' 
+                                            );
+                                            
+                                            wp_nav_menu( $defaults );
+                                            
+                                        ?>
+                                    </div><div class="clear"></div></li></ul><div class="clear"></div></div>                                </div>
                             </div>
-                            <div id="footcol3"  class="three columns">
-                                 <div class="widget-area">
-                                 	<div class="widget-bottom"><ul><li id="nav_menu-4" class="widget-container widget_nav_menu"><h3 class="widget-title">Information</h3><div class="menu-information-container"><ul id="menu-information" class="menu"><li id="menu-item-367" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-367"><a href="#">Specials</a></li>
-<li id="menu-item-368" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-368"><a href="#">Packages</a></li>
-<li id="menu-item-369" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-369"><a href="#">Promo</a></li>
-</ul></div><div class="clear"></div></li></ul><div class="clear"></div></div>                                </div>
-                            </div>
+                            
                             <div id="footcol4"  class="three columns">
                                  <div class="widget-area">
                                  	<div class="widget-bottom"><ul><li id="text-3" class="widget-container widget_text">			<div class="textwidget"><div class="wpcf7" id="wpcf7-f396-w1-o1"><form action="/royal/#wpcf7-f396-w1-o1" method="post" class="wpcf7-form" novalidate>

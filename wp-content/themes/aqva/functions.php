@@ -2,6 +2,13 @@
 	//register menu
 	function register_menu() {
 	  register_nav_menu('menu_top',__( 'menu_top' ));
+	  
+		register_nav_menus( array(
+			'menu_top' => 'Header - Menu',
+			'footer_col1' => 'Footer - Column 1',
+			'footer_col2' => 'Footer - Column 2'
+		) );
+	  
 	}
 	add_action( 'init', 'register_menu' );
 	
