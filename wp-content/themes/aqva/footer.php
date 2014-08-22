@@ -7,7 +7,7 @@
                         <div class="twelve columns">
                             <footer id="footer">
 								<div class="copyrighttext">
-                                        Copyright &copy; 2013-2014 <a href="http://demowordpress.templatesquare.com/royal/">Royal.</a>                                         Designed by	<a href="http://www.templatesquare.com" title="">TemplateSquare.com</a>.
+                                        Copyright @ 2014 AQ-VA Hotel & Villas
                                 </div>
                                 <div class="footertext">
 									                                </div>
