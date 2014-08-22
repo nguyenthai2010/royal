@@ -1,5 +1,0 @@
-*** Royal Changelog ***
-
-2014.05.13 - Version 1.0
-  * First Release!
-
