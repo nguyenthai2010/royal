@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6{color:#636363;}
 .sf-menu a, .sf-menu a:visited{color: #9e9e9e; }/* 1st level */
 .sf-menu a:hover, .sf-menu li.current-menu-item > a, .sf-menu li.current_page_item > a, 
 .sf-menu li.current-menu-ancestor > a, .sf-menu li.current-menu-parent > a, .sf-menu li.current_page_ancestor > a, 
-.sf-menu li.current_page_parent > a{color:$colormain;}/* 1st level */
+.sf-menu li.current_page_parent > a{color:$colorfocus;}/* 1st level */
 
 .sf-menu > li.current-menu-item, .sf-menu > li.current_page_item, 
 .sf-menu > li.current-menu-ancestor, .sf-menu > li.current-menu-parent, .sf-menu > li.current_page_ancestor, 
@@ -329,9 +329,22 @@ input.searchbutton {
 
 /* newslatter */
 
-.newslatter{ background:#e5e1e1; }
-.newslatter h3{color:$colormain;}
-.newslatter input[type="email"]{ border:1px solid #fff}
+.newslatter{ 
+	background:#e5e1e1; 
+	
+	h3{
+		color:$colorfocus;
+	}
+	
+	input[type="email"]{ 
+		border:1px solid #fff
+	}
+
+	input[type="submit"] {
+		background: $colorfocus;
+	}
+
+}
 
 
 /*============================================== FOOTER SECTION ==============================================*/
@@ -344,3 +357,11 @@ input.searchbutton {
 
 #outerfooter a{color:#a5a5a5;}
 #outerfooter a:hover{ color:$colormain; }
+
+/*slider*/
+.camera_prev > span:hover {
+	background: url(../images/slide-prev-h.png) no-repeat center;
+}
+.camera_next > span:hover {
+	background: url(../images/slide-next-h.png) no-repeat center;
+}
