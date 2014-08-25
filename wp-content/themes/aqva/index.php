@@ -21,9 +21,16 @@
 				<div class="row">
                 	<div class="eight columns center">
                     <div id="afterheader">
-						<h1 class="pagetitle">INVEST IN YOUR DREAMS</h1><span class="pagedesc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-</span>                        <div class="clear"></div>
+	<?php
+		$page_data = get_page_by_title( 'home' );
+		//print_r($page_data);
+		$desc=get_post_meta($page_data->ID,'_cmb_page_description_text',true);
+	?>  
+						<?php echo $desc?>
+                        
+                        <span class="pagedesc">
+                        	<?php echo $page_data->post_content?>
+                        </span>                        <div class="clear"></div>
                     </div>
 					<div class="clear"></div>
                     </div>
