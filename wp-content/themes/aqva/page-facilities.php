@@ -70,7 +70,7 @@
 																}
 									                     ?>
 															
-															<div class="columns fitem one_half feature<?= $i?> <?= $cls;?>" id="f-498">
+															<div class="columns fitem one_half feature<?= $i?> <?= $cls;?>">
 																<div class="item-container">
 																		<img src="<?= $url;?>" class="alignleft wp-post-image" alt="icon7">
 																	<div class="recent-text-wrap">
@@ -106,23 +106,7 @@
                         </section><!-- END #maincontent -->
                         
                                                 <div class="clear"></div>
-						                        <!-- BOTTOM -->
-                        <div id="outerbottom">
-                            <div class="container">
-                                <div class="row">
-                                    <div id="bottom-sidebar" class="twelve columns">
-                                        <div class="widget-bottom"><ul><li id="klasik-pcarousel-widget-2" class="widget-container widget_klasik_pcarousel">
-					<div class="flexslider-carousel row ">
-                    
-                    <div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides" style="width: 1200%; -webkit-transition: 0s; transition: 0s; -webkit-transform: translate3d(-328px, 0px, 0px);">
-					<li style="width: 130px; float: left; display: block;"><img width="170" height="83" src="http://demowordpress.templatesquare.com/royal/files/2014/03/l12.jpg" class="attachment-widget-carousel" alt="l1"></li><li style="width: 130px; float: left; display: block;"><img width="170" height="83" src="http://demowordpress.templatesquare.com/royal/files/2014/03/l22.jpg" class="attachment-widget-carousel" alt="l2"></li><li style="width: 130px; float: left; display: block;"><img width="170" height="83" src="http://demowordpress.templatesquare.com/royal/files/2014/03/l32.jpg" class="attachment-widget-carousel" alt="l3"></li><li style="width: 130px; float: left; display: block;"><img width="170" height="83" src="http://demowordpress.templatesquare.com/royal/files/2014/03/l42.jpg" class="attachment-widget-carousel" alt="l4"></li><li style="width: 130px; float: left; display: block;"><img width="170" height="83" src="http://demowordpress.templatesquare.com/royal/files/2014/03/l52.jpg" class="attachment-widget-carousel" alt="l5"></li><li style="width: 130px; float: left; display: block;"><img width="170" height="83" src="http://demowordpress.templatesquare.com/royal/files/2014/03/l62.jpg" class="attachment-widget-carousel" alt="l6"></li>                    </ul></div><ul class="flex-direction-nav"><li><a class="flex-prev" href="#">Previous</a></li><li><a class="flex-next flex-disabled" href="#">Next</a></li></ul></div>
-				<div class="clear"></div></li></ul><div class="clear"></div></div>                                        <div class="clear"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END BOTTOM -->
-                                                
+						                         
                         <div class="clear"></div>
                     </div>
                 </div>
