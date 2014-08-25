@@ -11,32 +11,14 @@
         ?>    
 
 
-		<?php
-            
-             while ( have_posts() ) : the_post();
-				$post = get_post(get_the_ID()); 
-				//print_r($post);
-
-				//Returns All Term Items for "my_taxonomy"
-				$term_list = wp_get_post_terms($post->ID, 'properties-tax', array("fields" => "all"));
-				print_r($term_list);
-				
-				
-				//Returns All Term Items for "my_taxonomy"
-				$term_floor = wp_get_post_terms($post->ID, 'floor-tax', array("fields" => "all"));
-				//print_r($term_floor);
-					
-        ?> 
-
-		<?php endwhile; ?>
 		<!-- AFTERHEADER -->
 		<div id="outerafterheader">
         	<div class="container">
             	<div class="row">
                 	<div class="twelve columns">
                     <div id="afterheader">
-						<h1 class="pagetitle"><?php echo $term_list[0]->name;?></h1>
-                        <span class="pagedesc"><?php echo $term_list[0]->name;?></span>                        
+						<h1 class="pagetitle">aaa</h1>
+                        <span class="pagedesc">bbb</span>                        
                         <br class="clear" />
                         <br class="clear" />
                     </div>

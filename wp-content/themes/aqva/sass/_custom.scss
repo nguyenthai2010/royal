@@ -16,3 +16,47 @@
 }
 
 
+/*listfloor*/
+.properties {
+	#outerafterheader {
+		#afterheader {
+			margin-bottom: 0;
+		}
+		
+		.noting {
+			text-align: center;
+		}
+		
+		.term_list_img {
+			text-align: center;
+			background: url(../images/pagetitle-line.png) no-repeat bottom;
+			margin: 10px 0 40px 0;
+		}
+	}
+	
+	#outermain {
+		#maincontent {
+			.three_fourth {
+				text-align: center;
+			}
+		}
+	}
+}
+
+
+.listfloor {
+	padding: 10px 0;
+	
+	a {
+		font-size: 14px;
+		color: #bfbfbf;
+		padding-left: 20px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 700;
+		text-decoration: underline;
+		 
+		&:hover {
+			color: $colormain;
+		}
+	}
+}
