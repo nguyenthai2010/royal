@@ -27,7 +27,14 @@ img.circleimg{background-color:#fafafa;}
 /* Heading & text */
 h1, h2, h3, h4, h5, h6{color:#636363;}
 .pagetitle{ color: #535353;}
-.pagedesc{ color:#a6a6a6}
+.pagedesc{ 
+	color:#a6a6a6;
+	
+	strong {
+		font-weight: normal;
+		color:#666666;	
+	}
+}
 
 /*======================================= HEADER SECTION =======================================*/
 .header-wrap{ border-top: 10px solid $colormain;}

@@ -13,7 +13,7 @@ function add_metaboxes_page( $meta_boxes ) {
                 'name' => '',
                 'desc' => '',
                 'id' => $prefix . 'page_description_text',
-                'type' => 'textarea_small'
+                'type' => 'wysiwyg'
             ),
         ),
     );
