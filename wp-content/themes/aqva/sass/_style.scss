@@ -1716,11 +1716,18 @@ width:40px; height:40px; background-repeat:no-repeat; background-position:center
       text-transform:none;
       margin-bottom:10px;
     }
-    ul.specification_desc{
+    ul{
+      list-style-type:none;
+      margin-left:3px;
       li{
         font-size:12px;
         color:#757575;
+        background:url(../images/dot.png) no-repeat left center;
+        padding-left:35px;
       }
     }
+  }
+  .padbottom30{
+    padding-bottom:30px;
   }
 }

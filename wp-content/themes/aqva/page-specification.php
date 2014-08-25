@@ -17,6 +17,7 @@
                 	<div class="twelve columns">
                     <div id="afterheader">
 						<h1 class="pagetitle">SPECIFICATIONS</h1>
+						<span class="pagedesc">A unique development built and appointed to the highest standards</span>
                         <br class="clear" />
                     </div>
 					<div class="clear"></div>
@@ -26,7 +27,14 @@
         </div>       
 		<!-- END AFTERHEADER -->
 
-
+		<?php
+			$args_specifications = array(
+				'post_type' 	 => 'specifications',
+				'posts_per_page' => -1 ,
+				'order'			 => 'asc'
+			);
+			$querySpecifications = get_posts($args_specifications);
+		?>
         <!-- MAIN CONTENT -->
 		<div id="outermain" class="noslider">
         	<div id="maincontainer">
@@ -39,9 +47,14 @@
 										<li id="categories-2" class="widget-container widget_categories">
 											<h3 class="widget-title">Categories</h3>		
 											<ul>
+												<?php
+					                                foreach ($querySpecifications as $speccategory) {
+					                                	//print_r($speccategory);
+												?>
 												<li class="cat-item cat-item-2">
-													<a href="http://demowordpress.templatesquare.com/royal/category/facilities/" title="View all posts filed under Facilities">Facilities</a>
+													<a href="<?php echo get_the_permalink($speccategory->ID);?>" title="<?= $speccategory->post_title;?>"><?= $speccategory->post_title;?></a>
 												</li>
+												<?php } ?>
 											</ul>
 											<div class="clear"></div>
 										</li>
@@ -61,21 +74,16 @@
 															<div class="columns fitem twelve">
 																<div class="item-container">
 																	<div class="recent-text-wrap">
-																		<h3 class="recent-title">The structure</h3>
-																		<ul class="specification_desc"> 
-																			<li>Contemporary and stylish appearance</li>
-																			<li>Natural stone on ground level external walls</li>
-																			<li>Upper level walls are plaster render and finished with Dulux Weather Shield</li>
-																			<li>Light coloured Hebel blocks used for internal wall construction</li>
-																			<li>Electrical and plumbing installed to the highest Western standards</li>
-																			<li>High quality water filtration</li>
-																			<li>Aluminum and foil roof structure</li>
-																			<li>Aluminum window and door frames</li>
-																			<li>Weatherproofed external walls</li>
-																			<li>Sound proofing</li>
-																			<li>Double wall insulation</li>
-																		</ul>
+																		<?php
+											                                foreach ($querySpecifications as $specifications) {
+											                                	//print_r($specifications);
+																		?>
+																		<div class="padbottom30">
+																			<h3 class="recent-title"><?= $specifications->post_title;?></h3>
+																			<?php echo $specifications->post_content;?>
+																		</div>
 																		<div class="clear"></div>
+																		<?php } ?>
 																	</div>
 																	<div class="clear"></div>
 																</div>
