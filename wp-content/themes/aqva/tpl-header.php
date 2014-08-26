@@ -8,7 +8,7 @@
                             	<div class="header-wrap">
                                     <div id="logo">		        	
             <div id="logoimg">
-            <a href="http://demowordpress.templatesquare.com/royal/" title="Royal" >
+            <a href="<?php echo bloginfo('home');?>" title="Royal" >
                 <img src="images/logo.png" alt="" />
             </a>
             </div>
