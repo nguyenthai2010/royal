@@ -13,7 +13,7 @@
 	add_action( 'init', 'register_menu' );
 	
 	//add theme support
-	add_theme_support('post-thumbnails',array('post','page','slider','facilities'));
+	add_theme_support('post-thumbnails',array('post','page','slider','facilities','reason-to-buy'));
 
 	//register meta box
 	// Initialize the metabox class
