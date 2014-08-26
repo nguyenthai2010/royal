@@ -1316,22 +1316,46 @@ border-radius: 4px;
 .wpcf7 p{margin-bottom:10px;}
 .wpcf7 label{display:block;}
 .wpcf7 input[type="text"], .wpcf7 input[type="email"]{
-	margin-bottom:6px;
-	font-size:11px;
-	width:60%
+	margin-bottom: 6px;
+	padding-left:15px;
+  font-size: 12px;
+  width: 80%;
+  height: 21px;
 }
 .wpcf7 textarea{
+  font-size: 12px;
+  padding-left:15px;
+}
+.wpcf7 input[name="area-code"]{
+    
+}
+.wpcf7 input[name="tel-number"]{
+    
+}
+span.wpcf7-form-control-wrap.area-code, span.wpcf7-form-control-wrap.tel-number{
+  float:left;
+}
+span.wpcf7-form-control-wrap.area-code{
+  width:10%;
+  margin-right:12px;
+}
+span.wpcf7-form-control-wrap.tel-number{
+  width:85.5%;
+}
+
+.wpcf7 textarea{
 	margin-bottom:7px;
-	padding:8px 5px;
-	font-size:11px;
-	width:90%
+	padding-top:8px;
+	font-size: 12px;
+  padding-left:15px;
+	width:80%
 }
 .wpcf7-submit{margin:0;}
 
 
 /* newslatter */
 
-.newslatter{ text-transform:uppercase; font-size:20px; padding:14px 20px 0px;
+.newslatter{ text-transform:uppercase; font-size:20px; padding:14px 20px 1px;
 -webkit-border-radius: 2px;
 -moz-border-radius: 2px;
 border-radius: 2px;
