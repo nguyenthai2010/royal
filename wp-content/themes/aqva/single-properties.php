@@ -38,9 +38,7 @@
                         <div id="afterheader">
                             <h1 class="pagetitle"><?php echo $term_list[0]->name;?></h1>
                             <div class="listfloor">
-                                <a href="#">1ST FLOOR</a>
-                                <a href="#">2ND FLOOR</a>
-                                <a href="#">3RD FLOOR</a>
+                               
                             </div>
                         </div>
                         <span class="pagedesc noting">Rollover the floorplan to see the available properties</span>     
@@ -87,7 +85,13 @@
 
 <script>
 jQuery(document).ready(function(e) {
-	var setting = ['<?php echo $urlsite;?>','<?php echo $term_list_img;?>','<?php echo $term_list_name;?>','<?php echo $properties_name;?>','<?php echo $term_floor_name;?>'];
+	var setting = {
+		urlsite 		: '<?php echo $urlsite;?>',
+		url		 		: '<?php echo $term_list_img;?>',
+		term_list 		: '<?php echo $term_list_name;?>',
+		properties_name : '<?php echo $properties_name;?>',
+		floor_current	: '<?php echo $term_floor_name;?>'
+	};
     properties.init(setting);
 });
 </script>

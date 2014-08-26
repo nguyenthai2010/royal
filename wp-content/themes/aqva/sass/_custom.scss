@@ -34,9 +34,6 @@
 			height: 235px;
 			position: relative;
 			
-			
-
-			
 			img{
 				position:absolute;
 				top:0;
@@ -57,7 +54,15 @@
 					width: 452px;
 					height: 146px;					
 				}
-			}			
+			}	
+			
+			&.villas{
+				img {
+					margin-left: -167px;
+					width: 335px;
+					height: 154px;					
+				}
+			}	
 		}
 	}
 	
@@ -75,15 +80,26 @@
 	padding: 10px 0;
 	
 	a {
+		display:inline-table;
 		font-size: 14px;
 		color: #bfbfbf;
-		padding-left: 20px;
+		padding: 5px 10px;
+		width: 85px; 
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 700;
 		text-decoration: underline;
 		 
-		&:hover {
+		&:hover, &.active {
 			color: $colormain;
+			text-decoration: none;
+		}
+		
+		&.soldout:hover{
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			background: #f2f2f2;
+			color: $colorfocus;
 		}
 	}
 }
