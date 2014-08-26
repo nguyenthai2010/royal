@@ -31,3 +31,6 @@
 
 	//register taxonomy
 	include 'taxonomy-custom/taxonomy-custom.php';
+	
+	//options
+	include 'inc/theme_options.php';
