@@ -64,6 +64,7 @@
                                 <div class="one_fourth column description">
                                 	<h3><?php echo $description_text;?></h3>
                                     <p><?php echo $post->post_content;?></p>
+                                    <a class="button" href="#">CONTACT US FOR MORE INFORMATION</a>
                                 </div>
                                 <div class="clear"></div>
                             </section>

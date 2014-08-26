@@ -49,6 +49,7 @@
 			}
 			
 			&.vip-apartments{
+				height: 180px;
 				img {
 					margin-left: -226px;
 					width: 452px;
@@ -57,19 +58,52 @@
 			}	
 			
 			&.villas{
+				height: 180px;
 				img {
 					margin-left: -167px;
 					width: 335px;
 					height: 154px;					
+				}
+			}
+			
+			&.townhouses{
+				height: 160px;
+				img {
+					margin-left: -112px;
+					width: 225px;
+					height: 138px;					
 				}
 			}	
 		}
 	}
 	
 	#outermain {
+		padding-bottom: 50px;
 		#maincontent {
 			.three_fourth {
 				text-align: center;
+			}
+			
+			.description {
+				
+				h3 {
+					font-size: 16px;
+					text-transform:none;
+					border-bottom: 3px solid #e5e1e1;
+					padding-bottom: 20px;					
+				}
+				
+				p {
+					font-size: 14px;
+				}
+				
+				a.button {
+					margin-top: 20px;
+					padding: 10px 20px;
+					background: #57c5cf;
+					font-size: 14px;
+					font-family: 'Roboto Condensed', sans-serif; 
+				}
 			}
 		}
 	}

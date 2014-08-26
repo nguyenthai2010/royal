@@ -11,7 +11,7 @@ var properties = (function() {
 
 	var arraylist = ['suite-apartments','townhouses','villas','vip-apartments'];
 	var arrayImage1 = [302, 307, 308];
-	var arrayImage2 = ['m1','m2'];
+	var arrayImage2 = ['2b'];
 	var arrayImage3 = ['m1','m2'];
 	var arrayImage4 = [102, 201, 202, 203, 204, 205, '302-2', 404];
 	
@@ -29,6 +29,9 @@ var properties = (function() {
 		if(settingRoom.term_list == arraylist[0]){
 			create(arrayImage1, 0, status);
 		}
+		else if(settingRoom.term_list == arraylist[1]){
+			create(arrayImage2, 1, status);
+		}
 		else if(settingRoom.term_list == arraylist[2]){
 			create(arrayImage3, 2, status);
 		}
@@ -40,7 +43,7 @@ var properties = (function() {
 	//FUNCTION create list image
 	function create(array, type, firsttime){
 		var url_img = settingRoom.url + '/images/properties/' + settingRoom.term_list;
-		var imgMain = '<img id="properties_main" src="'+url_img + '/f.png' +'" width="452" height="146" usemap="#Map">';
+		var imgMain = '<img id="properties_main" src="'+url_img + '/f.png' +'" usemap="#Map">';
 			
 		// process floor
 		var n = get_floor_number(settingRoom.floor_current);
@@ -52,7 +55,7 @@ var properties = (function() {
 			strMap = imgMain + '<map name="Map"><area class="201" shape="poly" coords="53,14,55,113,105,113,106,51,125,49,125,17" href="javascript:void(0);" onMouseOver="properties.hover(\'properties_' + array[1] + '\')" onClick="properties.changeURL(\'' + array[1] + '\')"><area class="202" shape="poly" coords="212,18,211,51,131,50,128,16" href="javascript:void(0);" onMouseOver="properties.hover(\'properties_' + array[2] + '\')" onClick="properties.changeURL(\'' + array[2] + '\')"><area class="203" shape="poly" coords="249,17,249,48,323,49,323,20" href="javascript:void(0);" onMouseOver="properties.hover(\'properties_' + array[3] + '\')" onClick="properties.changeURL(\'' + array[3] + '\')"><area class="204" shape="poly" coords="400,22,399,62,354,63,352,52,329,51,328,20" href="javascript:void(0);" onMouseOver="properties.hover(\'properties_' + array[4] + '\')" onClick="properties.changeURL(\'' + array[4] + '\')"><area class="205" shape="rect" coords="354,64,398,121" href="javascript:void(0);" onMouseOver="properties.hover(\'properties_' + array[5] + '\')" onClick="properties.changeURL(\'' + array[5] + '\')"></map>';
 		} 		
 		else if (type == 2){
-			strMap = imgMain + '<map name="Map"><area shape="rect" coords="256,48,324,95" href="href="javascript:void(0);" onMouseOver="properties.hover(\'properties_' + array[1] + '\')" onClick="properties.changeURL(\'' + array[0] + '\')"><area shape="poly" coords="225,90,226,145,280,145,280,94,255,94,255,91" href="href="javascript:void(0);" onMouseOver="properties.hover(\'properties_' + array[1] + '\')" onClick="properties.changeURL(\'' + array[1] + '\')"></map>';
+			strMap = imgMain + '<map name="Map"><area shape="rect" coords="256,48,324,95" href="javascript:void(0);" onMouseOver="properties.hover(\'properties_' + array[0] + '\')" onClick="properties.changeURL(\'' + array[0] + '\')"><area shape="poly" coords="225,90,226,145,280,145,280,94,255,94,255,91" href="javascript:void(0);" onMouseOver="properties.hover(\'properties_' + array[1] + '\')" onClick="properties.changeURL(\'' + array[1] + '\')"></map>';
 		}
 		jQuery('.term_list_img').html('');
 		jQuery('.term_list_img').append(strMap);
@@ -76,7 +79,7 @@ var properties = (function() {
 			);
 		}
 		else {
-			jQuery('.term_list_img').html('');
+			jQuery('.listfloor').html('');
 		}
 		
 		jQuery('.menufloor' + n).addClass('active');
