@@ -31,6 +31,22 @@
 			text-align: center;
 			background: url(../images/pagetitle-line.png) no-repeat bottom;
 			margin: 10px 0 40px 0;
+			height: 235px;
+			position: relative;
+			
+			img{
+				position:absolute;
+				top:0;
+				left:50%;
+				margin-left: - 205px;
+				width: 410px;
+				height: 227px;
+				z-index: 1;
+				
+				&#properties_main{
+					z-index: 2;					
+				}
+			}
 		}
 	}
 	

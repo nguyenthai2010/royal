@@ -42,13 +42,7 @@ var addthis_product = 'wpp-265';
 <script type='text/javascript' src='themes/klasik/js/camera.min.js?ver=1.3.3'></script>
 <script type='text/javascript' src='js/custom.js?ver=1.0'></script>
 <script type='text/javascript' src='js/jquery.isotope.min.js?ver=1.5.19'></script>
-<script type='text/javascript' src='http://demowordpress.templatesquare.com/royal/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.46.0-2013.11.21'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var _wpcf7 = {"loaderUrl":"http:\/\/demowordpress.templatesquare.com\/royal\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://demowordpress.templatesquare.com/royal/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=3.6'></script>
+
 	<script type="text/javascript">
 	//Add Class Js to html
 	jQuery('html').addClass('js');	

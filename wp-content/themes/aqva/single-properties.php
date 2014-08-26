@@ -17,16 +17,15 @@
 				$post = get_post(get_the_ID()); 
 				$description_text = get_post_meta(get_the_ID(),'_cmb_properties_description_text',true);
 				$properties_image = get_post_meta(get_the_ID(),'_cmb_properties_image',true);
-
-				//Returns All Term Items for "my_taxonomy"
-				$term_list = wp_get_post_terms($post->ID, 'properties-tax', array("fields" => "all"));
-				$term_list_img = get_bloginfo('template_url').'/images/properties/'.$term_list[0]->slug.'.png';
-				//print_r($term_list);
+				//print_r($post);
 				
-				//Returns All Term Items for "my_taxonomy"
+				$term_list = wp_get_post_terms($post->ID, 'properties-tax', array("fields" => "all"));
 				$term_floor = wp_get_post_terms($post->ID, 'floor-tax', array("fields" => "all"));
-				//print_r($term_floor);
-					
+				
+				$term_list_img = get_bloginfo('template_url');	
+				$properties_name = $post->post_name;
+				$term_list_name = $term_list[0]->slug;
+				$urlsite = get_site_url(); ;
         ?> 
 
 		<?php endwhile; ?>
@@ -44,7 +43,7 @@
                             </div>
                         </div>
                         <span class="pagedesc noting">Rollover the floorplan to see the available properties</span>     
-                        <div class="term_list_img"><img src="<?php echo $term_list_img;?>"></div>
+                        <div class="term_list_img <?php echo $term_list_name;?>"></div>
                         <div class="clear"></div>
                     </div>
                     
@@ -84,3 +83,9 @@
 <?php 
 	get_footer();
 ?>
+
+<script>
+jQuery(document).ready(function(e) {
+    properties.init('<?php echo $urlsite;?>', '<?php echo $term_list_img;?>', '<?php echo $term_list_name;?>', '<?php echo $properties_name;?>');
+});
+</script>
