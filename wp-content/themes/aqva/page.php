@@ -16,7 +16,7 @@
             	<div class="row">
                 	<div class="twelve columns">
                     <div id="afterheader">
-						<h1 class="pagetitle">About Our Hotel</h1>
+						<h1 class="pagetitle"><?= the_title();?></h1>
                         <span class="pagedesc">Pellentesque auctor nisl eget mi accumsan auctor. Vivamus tempor magna eget tellus elementum</span>                        
                         <br class="clear" />
                         <br class="clear" />
