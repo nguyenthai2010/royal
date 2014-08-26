@@ -116,7 +116,7 @@ function register_custom_post_properties() {
  register_post_type('Properties',$news);
 }
 
-/*gallery*/
+/*facilities*/
 add_action( 'init', 'register_custom_post_facilities' );
 function register_custom_post_facilities() {	
 	$news_label = array(
@@ -155,3 +155,41 @@ function register_custom_post_facilities() {
  register_post_type('facilities',$news);
 }
 
+/*SPECIFICATIONS*/
+add_action( 'init', 'register_custom_post_specifications' );
+function register_custom_post_specifications() {	
+	$news_label = array(
+    'name' => _x('Specifications', 'Specifications'),
+    'singular_name' => _x('specifications', 'specifications'),
+    'add_new' => _x('Add New', 'Gallery'),
+    'add_new_item' => __('Add New'),
+    'edit_item' => __('Edit '),
+    'new_item' => __('Add New'),
+    'all_items' => __('View All'),
+    'view_item' => __('View'),
+    'search_items' => __('Search'),
+    'not_found' =>  __('Not Find'),
+    'not_found_in_trash' => __('Not Find in Trash'), 
+    'parent_item_colon' => '',
+    'menu_name' => 'Specifications'
+  );
+  $news= array(
+    'labels' => $news_label,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+   'show_in_nav_menus'=>true,
+    'query_var' => true,
+    'rewrite' =>  array('slug'=>'specifications'),
+    'capability_type' => 'post',
+    'has_archive' => true, 
+    'hierarchical' => false,
+    'menu_position' => 5,  
+    'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/slideshow.png',
+  	'taxonomies'		=> array(''),
+    'supports' => array('title','editor','thumbnail'),
+    
+  ); 
+ register_post_type('specifications',$news);
+}
