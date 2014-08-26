@@ -34,6 +34,9 @@
 			height: 235px;
 			position: relative;
 			
+			
+
+			
 			img{
 				position:absolute;
 				top:0;
@@ -47,6 +50,14 @@
 					z-index: 2;					
 				}
 			}
+			
+			&.vip-apartments{
+				img {
+					margin-left: -226px;
+					width: 452px;
+					height: 146px;					
+				}
+			}			
 		}
 	}
 	

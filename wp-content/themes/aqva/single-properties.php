@@ -26,6 +26,7 @@
 				$properties_name = $post->post_name;
 				$term_list_name = $term_list[0]->slug;
 				$urlsite = get_site_url(); ;
+				$term_floor_name = $term_floor[0]->slug; 
         ?> 
 
 		<?php endwhile; ?>
@@ -86,6 +87,7 @@
 
 <script>
 jQuery(document).ready(function(e) {
-    properties.init('<?php echo $urlsite;?>', '<?php echo $term_list_img;?>', '<?php echo $term_list_name;?>', '<?php echo $properties_name;?>');
+	var setting = ['<?php echo $urlsite;?>','<?php echo $term_list_img;?>','<?php echo $term_list_name;?>','<?php echo $properties_name;?>','<?php echo $term_floor_name;?>'];
+    properties.init(setting);
 });
 </script>
