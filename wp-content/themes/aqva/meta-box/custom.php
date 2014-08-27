@@ -52,4 +52,26 @@ function add_metaboxes_properties( $meta_boxes ) {
 }
 add_filter( 'cmb_meta_boxes', 'add_metaboxes_page' );
 
+add_filter( 'cmb_meta_boxes', 'add_metaboxes_images_facility' );
+function add_metaboxes_images_facility( $meta_boxes ) {
+    $prefix = '_cmb_'; // Prefix for all fields
+    $meta_boxes['facility_image'] = array(
+        'id' => 'facility_image',
+        'title' => 'Image',
+        'pages' => array('facilities'), // post type
+        'context' => 'normal',
+        'priority' => 'high',
+        'show_names' => false, // Show field names on the left
+        'fields' => array(
+			array(
+                'name' => '',
+                'desc' => '',
+                'id' => $prefix . 'facility_image',
+                'type' => 'file'
+            )
+        ),
+    );
 
+    return $meta_boxes;
+}
+add_filter( 'cmb_meta_boxes', 'add_metaboxes_page' );
