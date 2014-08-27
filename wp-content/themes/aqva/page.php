@@ -9,7 +9,11 @@
 		<?php
             get_template_part('tpl','header'); 
         ?>    
-     
+     	
+        <?php
+        	$post = get_post(get_the_ID()); 
+			//print_r($post);
+		?>
 		<!-- AFTERHEADER -->
 		<div id="outerafterheader">
         	<div class="container">
@@ -17,7 +21,7 @@
                 	<div class="twelve columns">
                     <div id="afterheader">
 						<h1 class="pagetitle"><?= the_title();?></h1>
-                        <span class="pagedesc">Pellentesque auctor nisl eget mi accumsan auctor. Vivamus tempor magna eget tellus elementum</span>                        
+                        <span class="pagedesc"></span>                        
                         <br class="clear" />
                         <br class="clear" />
                     </div>
@@ -41,7 +45,7 @@
 							                                                        
                                                         
                                                         <!-- main -->
-<div class="textwidget">Donec hendrerit vehicula est, in consequat hendrerit vehicula est, in consequat. Massa venenatis consectetur rhoncus euismod facilisi lacus inceptos rutrum tortor dictumst habitant sit quis viverra habitant ridiculus feugiat turpis non libero neque nam suscipit egestas vulputate aenean facilisis. </div>                            
+<div class="textwidget"></div>                            
                                                         <div class="clear"></div>
                         </section>
                                                 <div class="clear"></div>

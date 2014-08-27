@@ -19,5 +19,6 @@
 <script type='text/javascript' src='js/jquery-migrate.min.js'></script>
 <script type='text/javascript' src='js/comment-reply.min.js'></script>
 <script type='text/javascript' src='js/class.properties.js'></script>
+<script type='text/javascript' src='js/class.overview.js'></script>
 <?php wp_head();?>
 </head>

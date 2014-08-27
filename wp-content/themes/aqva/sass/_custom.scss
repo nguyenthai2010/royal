@@ -137,3 +137,67 @@
 		}
 	}
 }
+
+.overview {
+	.overviewhotel {
+		position: relative;
+		font-size: $basefontsize;
+		width: pxToEm(900px, $basefontsize);
+		height: pxToEm(206px, $basefontsize);
+		margin: 0 auto;
+		margin-bottom: 100px;
+		
+		.blockoverview {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			
+
+			
+			&.block1{
+				top: pxToEm(0px, $basefontsize);
+				left: pxToEm(16px, $basefontsize);
+				height: pxToEm(100px, $basefontsize);
+				width: pxToEm(110px, $basefontsize);				
+			}
+			
+			&.block2{
+				top: pxToEm(118px, $basefontsize);
+				left: pxToEm(113px, $basefontsize);
+				height: pxToEm(90px, $basefontsize);
+				width: pxToEm(290px, $basefontsize);				
+			}
+			
+			&.block4{
+				top: pxToEm(26px, $basefontsize);
+				left: pxToEm(668px, $basefontsize);
+				height: pxToEm(105px, $basefontsize);
+				width: pxToEm(220px, $basefontsize);				
+			}
+			
+			&.block3{
+				top: pxToEm(53px, $basefontsize);
+				left: pxToEm(454px, $basefontsize);
+				height: pxToEm(62px, $basefontsize);
+				width: pxToEm(210px, $basefontsize);				
+			}
+		}
+		
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;			
+			width: 100%;
+			height: 100%;
+			display: none;
+			&.active {
+				display: block;
+			}			
+			
+			&#overvieimage-0 {
+				display: block;	
+			}
+		}	
+	}
+}
