@@ -58,20 +58,35 @@
                             
                             <div id="footcol4"  class="three columns">
                                  <div class="widget-area">
-                                 	<div class="widget-bottom"><ul><li id="text-3" class="widget-container widget_text">			<div class="textwidget"><div class="wpcf7" id="wpcf7-f396-w1-o1"><form action="/royal/#wpcf7-f396-w1-o1" method="post" class="wpcf7-form" novalidate>
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="396" />
-<input type="hidden" name="_wpcf7_version" value="3.6" />
-<input type="hidden" name="_wpcf7_locale" value="en_US" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f396-w1-o1" />
-<input type="hidden" name="_wpnonce" value="002d32469b" />
-</div>
-<div class="newslatter">
-<h3>Newsletter</h3>
-<p>    <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" /></span> <input type="submit" value="Go" class="wpcf7-form-control wpcf7-submit" /></p></div>
-<div class="wpcf7-response-output wpcf7-display-none"></div></form></div></div>
-		<div class="clear"></div></li></ul><div class="clear"></div></div>                                </div>
-                            </div>
+                                 	<div class="widget-bottom">
+                                 		<ul>
+                                 			<li id="text-3" class="widget-container widget_text">			
+                                 				<div class="textwidget">
+                                 					<div class="wpcf7" id="wpcf7-f396-w1-o1">
+                                 						<form action="" method="post" class="form-newsletter">
+															<input name="action" type="hidden" class="action" value="sub_newsletter"/>
+															<div class="newslatter">
+																<h3>Newsletter</h3>
+																<p>    
+																	<span class="wpcf7-form-control-wrap your-email">
+																		<input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email requiredField" aria-invalid="false" />
+																	</span> 
+																	<input type="submit" value="Go" class="wpcf7-form-control wpcf7-submit" />
+																</p>
+																<div class="loading"><img style="width: 16px;height:16px;" src="images/ajax-loader.gif" alt=""/></div>
+															</div>
+															<input name="ajaxurl" type="hidden" class="ajaxurl" value="<?php echo bloginfo('home').'/wp-admin/admin-ajax.php'; ?>"/>
+                      										<input name="security" type="hidden" class="action" value="<?php echo wp_create_nonce('security')?>"/>
+															<div class="wpcf7-response-output wpcf7-display-none"></div>
+														</form>
+													</div>
+												</div>
+												<div class="clear"></div>
+											</li>
+										</ul>
+										<div class="clear"></div></div>                                
+									</div>
+                            	</div>
                             <div class="clear"></div>
                             </div>
                         </footer>
@@ -81,3 +96,5 @@
             </div>
         </div>
         <!-- END FOOTER SIDEBAR -->
+
+        <script src="js/validate.js"></script>

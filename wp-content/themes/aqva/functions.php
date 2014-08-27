@@ -34,6 +34,11 @@
 	
 	//options
 	include 'inc/theme_options.php';
+	//create table newsletter
+	//include 'newsletter/newsletter_db.php';
+	include TEMPLATEPATH.'/newsletter/functions.php';
+	include TEMPLATEPATH.'/newsletter/page_newsletter.php';
+	
 	
 	function get_page_id_by_slug($slug){
 	    global $wpdb;

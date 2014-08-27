@@ -1371,6 +1371,9 @@ border-radius: 2px;
 -webkit-border-radius: 2px;
 -moz-border-radius: 2px;
 border-radius: 2px;
+&.inputError{
+  border:1px solid red;
+}
 }
 
 .newslatter .wpcf7-submit{padding: 6px 5px;}
@@ -1820,4 +1823,14 @@ width:40px; height:40px; background-repeat:no-repeat; background-position:center
       }
     }
   }
+}
+.newslatter{
+  position:relative;
+}
+#footcol4 .ajax-loader{display:none;}
+#footcol4 .loading{
+  position: absolute;
+top: 48px;
+right: 71px;
+display:none;
 }
