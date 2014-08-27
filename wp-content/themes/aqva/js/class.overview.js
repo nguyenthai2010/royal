@@ -12,13 +12,17 @@ var overview = (function() {
 			function(){
 				var pic = jQuery(this).attr('pic');
 				jQuery(pic).addClass('active');
-				console.log(pic);
 			},
 			function(){
 				var pic = jQuery(this).attr('pic');
 				jQuery(pic).removeClass('active');
 			}
 		);
+		
+		jQuery('.blockoverview').click(function(e) {
+			var link = jQuery(this).attr('link');
+			window.location.href = link;
+        });
 	}
 	
 	//FUNCTION

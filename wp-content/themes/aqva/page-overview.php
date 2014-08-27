@@ -46,10 +46,10 @@
                                 <img class="overvieimageprocessing" id="overvieimage-2" src="images/overview/2.jpg"/>
                                 <img class="overvieimageprocessing" id="overvieimage-3" src="images/overview/3.jpg"/>
                                 <img class="overvieimageprocessing" id="overvieimage-4" src="images/overview/4.jpg"/>
-                                <div class="blockoverview block1" pic="#overvieimage-1"></div>
-                                <div class="blockoverview block2" pic="#overvieimage-2"></div>
-                                <div class="blockoverview block3" pic="#overvieimage-3"></div>
-                                <div class="blockoverview block4" pic="#overvieimage-4"></div>
+                                <div class="blockoverview block1" pic="#overvieimage-1" link="/properties/2b/"></div>
+                                <div class="blockoverview block2" pic="#overvieimage-2" link="/properties/m1/"></div>
+                                <div class="blockoverview block3" pic="#overvieimage-3" link="/properties/102/"></div>
+                                <div class="blockoverview block4" pic="#overvieimage-4" link="/properties/302/"></div>
                           </div>
                         	
                        	<div class="clear"></div>
