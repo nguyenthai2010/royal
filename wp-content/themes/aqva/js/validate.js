@@ -39,6 +39,7 @@
 								//b("#popup-agent .popup-container").css('z-index','10');
 								b(".form-newsletter").append('<div class="contact-success"><strong>Send successful!</strong></div>')
 								setTimeout(function(){
+									jQuery('.form-newsletter')[0].reset();
 									jQuery('.contact-success').hide();
 								},1000);
 							}else{
