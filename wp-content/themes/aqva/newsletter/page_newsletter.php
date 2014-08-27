@@ -1,7 +1,7 @@
 <?php
   add_action('admin_menu', 'bt_add_newsletter');
     function bt_add_newsletter(){   
-        add_menu_page( 'News letter', 'News letter', 'edit_posts', 'news-letter', 'bt_news_letter', get_bloginfo('template_url') . '/images/Devices-media-floppy-icon.png', 10 );
+        add_menu_page( 'News letter', 'News letter', 'edit_posts', 'news-letter', 'bt_news_letter', get_bloginfo('template_url') . '/images/newsletter-icon.png', 10 );
     }
  function bt_news_letter(){
 	 global $wpdb;

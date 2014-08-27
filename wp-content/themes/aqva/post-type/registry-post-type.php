@@ -30,7 +30,7 @@ function register_custom_post_slider() {
     'has_archive' => true, 
     'hierarchical' => false,
     'menu_position' => 5,  
-    'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/slideshow.png',
+    'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/slider.jpg',
   	'taxonomies'		=> array(''),
     'supports' => array('title','editor','thumbnail'),
     
@@ -69,7 +69,7 @@ function register_custom_post_gallery() {
     'has_archive' => true, 
     'hierarchical' => false,
     'menu_position' => 5,  
-    'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/slideshow.png',
+    'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/gallery.png',
   	'taxonomies'		=> array(''),
     'supports' => array('title','editor','thumbnail'),
     
@@ -108,7 +108,7 @@ function register_custom_post_properties() {
     'has_archive' => true, 
     'hierarchical' => false,
     'menu_position' => 5,  
-    'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/slideshow.png',
+    'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/properties.jpg',
   	'taxonomies'		=> array(''),
     'supports' => array('title','editor','thumbnail'),
     
@@ -147,7 +147,7 @@ function register_custom_post_facilities() {
     'has_archive' => true, 
     'hierarchical' => false,
     'menu_position' => 5,  
-    'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/slideshow.png',
+    'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/facities.png',
   	'taxonomies'		=> array(''),
     'supports' => array('title','editor','thumbnail'),
     
@@ -186,7 +186,7 @@ function register_custom_post_specifications() {
     'has_archive' => true, 
     'hierarchical' => false,
     'menu_position' => 5,  
-    'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/slideshow.png',
+    'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/specifications.png',
   	'taxonomies'		=> array(''),
     'supports' => array('title','editor','thumbnail'),
     
@@ -225,7 +225,7 @@ function register_custom_post_reason_to_buy() {
     'has_archive' => true, 
     'hierarchical' => false,
     'menu_position' => 5,  
-    'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/slideshow.png',
+    'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/reasontobuy.png',
   	'taxonomies'		=> array(''),
     'supports' => array('title','editor','thumbnail'),
     
