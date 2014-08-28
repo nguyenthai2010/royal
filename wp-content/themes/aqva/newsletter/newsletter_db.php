@@ -6,7 +6,7 @@ function  create_table_newsletter()
 	$tb_country=$wpdb->prefix .'newsletter';
 if ($wpdb->get_var("SHOW TABLES LIKE '$tb_country'") != $tb_country) {
 		$wpdb->query("CREATE TABLE {$tb_country}(
-			id char(2)  PRIMARY KEY,
+			id char(2)  PRIMARY KEY AUTO_INCREMENT,
 			email varchar(128) NOT NULL
 		)ENGINE=MyISAM DEFAULT CHARSET=utf8");
 

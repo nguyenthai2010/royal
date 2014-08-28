@@ -48,7 +48,7 @@ text-indent:5px;
 				<td><?php echo $i;?></td>
 				<td style="display:none;"><?php echo $value -> id;?></td>
 				<td><?php echo $value -> email ; ?></td>
-				<td><a href="<?php bloginfo('url')?>/wp-admin/admin.php?page=news-letter&ID=<?php echo $value ->id;?>">Delete</a></td>
+				<td><a onClick="return confirm('Do you want to delete?');" href="<?php bloginfo('url')?>/wp-admin/admin.php?page=news-letter&ID=<?php echo $value ->id;?>">Delete</a></td>
 			</tr>
 			<?php 
 			$i++;
