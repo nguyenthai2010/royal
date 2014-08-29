@@ -17,6 +17,7 @@
 />
 
 <meta name="robots" content="index,follow,noarchive">
+
 <!--[if lt IE 9]>
 <script src="themes/klasik/js/html5.js" type="text/javascript"></script>
 <![endif]-->
@@ -32,5 +33,32 @@
 <script type='text/javascript' src='js/class.properties.js'></script>
 <script type='text/javascript' src='js/class.overview.js'></script>
 <script type='text/javascript' src='js/class.contact.js'></script>
+
+<script>
+	var isMobile = false;
+</script>
 <?php wp_head();?>
+
+<?php
+	require_once 'mobiledetect/Mobile_Detect.php';
+	$detect = new Mobile_Detect;
+	$deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
+	$scriptVersion = $detect->getScriptVersion();
+	
+	if($deviceType=='phone'){
+?>
+<script>
+	var isMobile = true ;
+</script>
+<meta name="viewport" content="width=460" >
+<?php		
+	}
+	elseif($deviceType=='tablet'){
+?>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<?php		
+	}
+?>
+
+
 </head>

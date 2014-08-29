@@ -4,6 +4,7 @@
 
 <body class="properties page-template-default klasikt">
 
+
 <div id="bodychild">
 	<div id="outercontainer">
 		<?php
@@ -28,7 +29,7 @@
 				$urlsite = get_site_url(); ;
 				$term_floor_name = $term_floor[0]->slug; 
 				
-				echo '123:'.add_query_arg( 'foo', 'bar' );
+				//echo '123:'.add_query_arg( 'foo', 'bar' );
         ?> 
 
 		<?php endwhile; ?>

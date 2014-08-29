@@ -96,6 +96,7 @@ var properties = (function() {
 		})
 		
 		hover('properties_' + settingRoom.properties_name);
+		mobileFloor();
 	}
 	
 	//FUNCTION
@@ -121,6 +122,14 @@ var properties = (function() {
 	function changeFloor(floor_current){
 		settingRoom.floor_current = floor_current;
 		run(false);
+	}
+	
+	function mobileFloor(){
+		if(isMobile){
+			jQuery('.soldout').addClass('nounderline');
+			jQuery('.pagedesc.noting').css('display','none');
+			
+		}
 	}
 	
 	//RETURN
