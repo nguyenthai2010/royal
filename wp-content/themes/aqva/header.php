@@ -7,7 +7,16 @@
 <!-- Mobile Specific Metas
   ================================================== -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="description" content="
+<?php if ( is_single() ) {
+    single_post_title('', true); 
+} else {
+    bloginfo('name'); echo " - "; bloginfo('description');
+}
+?>" 
+/>
 
+<meta name="robots" content="index,follow,noarchive">
 <!--[if lt IE 9]>
 <script src="themes/klasik/js/html5.js" type="text/javascript"></script>
 <![endif]-->

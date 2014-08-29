@@ -32,7 +32,7 @@ function register_custom_post_slider() {
     'menu_position' => 5,  
     'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/slider.jpg',
   	'taxonomies'		=> array(''),
-    'supports' => array('title','editor','thumbnail'),
+    'supports' => array('title','editor','thumbnail', 'excerpt'),
     
   ); 
  register_post_type('Slider',$news);
@@ -71,7 +71,7 @@ function register_custom_post_gallery() {
     'menu_position' => 5,  
     'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/gallery.png',
   	'taxonomies'		=> array(''),
-    'supports' => array('title','editor','thumbnail'),
+    'supports' => array('title','editor','thumbnail', 'excerpt'),
     
   ); 
  register_post_type('Gallery',$news);
@@ -110,7 +110,7 @@ function register_custom_post_properties() {
     'menu_position' => 5,  
     'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/properties.jpg',
   	'taxonomies'		=> array(''),
-    'supports' => array('title','editor','thumbnail'),
+    'supports' => array('title','editor','thumbnail', 'excerpt'),
     
   ); 
  register_post_type('Properties',$news);
@@ -149,7 +149,7 @@ function register_custom_post_facilities() {
     'menu_position' => 5,  
     'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/facities.png',
   	'taxonomies'		=> array(''),
-    'supports' => array('title','editor','thumbnail'),
+    'supports' => array('title','editor','thumbnail', 'excerpt'),
     
   ); 
  register_post_type('facilities',$news);
@@ -188,7 +188,7 @@ function register_custom_post_specifications() {
     'menu_position' => 5,  
     'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/specifications.png',
   	'taxonomies'		=> array(''),
-    'supports' => array('title','editor','thumbnail'),
+    'supports' => array('title','editor','thumbnail', 'excerpt'),
     
   ); 
  register_post_type('specifications',$news);
@@ -227,7 +227,7 @@ function register_custom_post_reason_to_buy() {
     'menu_position' => 5,  
     'menu_icon'	=> get_bloginfo('template_url').'/post-type/images/reasontobuy.png',
   	'taxonomies'		=> array(''),
-    'supports' => array('title','editor','thumbnail'),
+    'supports' => array('title','editor','thumbnail', 'excerpt'),
     
   ); 
  register_post_type('reason-to-buy',$news);
