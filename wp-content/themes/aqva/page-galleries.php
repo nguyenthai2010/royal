@@ -46,13 +46,10 @@
 <?php
 	foreach ($queryRows as $row) {
 		$i++;
-		$idthump = get_post_meta($row->ID,'tt_libary_image_gallery_thump',true);
-		$idlarge = get_post_meta($row->ID,'tt_libary_image_gallery_large',true);
-		
-		$url_thump = wp_get_attachment_image_src($idthump ,'full');		
-		$url_large = wp_get_attachment_image_src($idlarge ,'full');		
+		$idthump = get_post_meta($row->ID,'_cmb_gallery_image_thump',true);
+		$idlarge = get_post_meta($row->ID,'_cmb_gallery_image_large',true);
 ?>
-<div data-id="id-<?php echo $row->ID; ?>" class="item one_fourth columns alpha our-rooms" data-type="our-rooms"><div class="klasik-pf-img"><div class="shadowBottom"><a class="pfzoom" href="<?php echo $url_large[0]; ?>" data-rel="prettyPhoto[mixed]" title="" rel="prettyPhoto[mixed]"><span class="rollover" style="opacity: 0; display: inline;"></span><img width="430" height="271" src="<?php echo $url_thump[0]; ?>" class="attachment-widget-portfolio wp-post-image" alt="img4"></a><div class="clear"></div></div><div class="pfarrow"></div></div><div class="clear"></div></div>
+<div data-id="id-<?php echo $row->ID; ?>" class="item one_fourth columns alpha our-rooms" data-type="our-rooms"><div class="klasik-pf-img"><div class="shadowBottom"><a class="pfzoom" href="<?php echo $idlarge; ?>" data-rel="prettyPhoto[mixed]" title="" rel="prettyPhoto[mixed]"><span class="rollover" style="opacity: 0; display: inline;"></span><img width="430" height="271" src="<?php echo $idthump; ?>" class="attachment-widget-portfolio wp-post-image" alt="<?php echo $row->post_name;?>"></a><div class="clear"></div></div><div class="pfarrow"></div></div><div class="clear"></div></div>
 <?php }?>                              
                             </div>
                         	<div class="clear"></div>

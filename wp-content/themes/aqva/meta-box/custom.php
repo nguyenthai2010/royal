@@ -74,4 +74,33 @@ function add_metaboxes_images_facility( $meta_boxes ) {
 
     return $meta_boxes;
 }
-add_filter( 'cmb_meta_boxes', 'add_metaboxes_page' );
+
+
+function add_metaboxes_gallery( $meta_boxes ) {
+    $prefix = '_cmb_'; // Prefix for all fields
+    $meta_boxes['gallery_image'] = array(
+        'id' => 'gallery_image',
+        'title' => 'Image',
+        'pages' => array('gallery'), // post type
+        'context' => 'normal',
+        'priority' => 'high',
+        'show_names' => false, // Show field names on the left
+        'fields' => array(
+            array(
+				'name' => __( 'Thump', 'cmb' ),
+				'desc' => __( 'Upload an thump image or enter a URL.', 'cmb' ),
+				'id'   => $prefix . 'gallery_image_thump',
+				'type' => 'file'				
+            ),
+            array(
+				'name' => __( 'Image', 'cmb' ),
+				'desc' => __( 'Upload an large image or enter a URL.', 'cmb' ),
+				'id'   => $prefix . 'gallery_image_large',
+				'type' => 'file'				
+            ),
+        ),
+    );
+
+    return $meta_boxes;
+}
+add_filter( 'cmb_meta_boxes', 'add_metaboxes_gallery' );
