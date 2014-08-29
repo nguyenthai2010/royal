@@ -23,6 +23,19 @@
         </div>
         <!-- END SLIDER -->        
 		<!-- END AFTERHEADER -->
+<?php
+	global $wp_query;
+	if (isset($wp_query->query_vars['proID']))
+	{
+		$proID = $wp_query->query_vars['proID'];
+		$post = get_post($proID); 
+		$term_list = wp_get_post_terms($proID, 'properties-tax', array("fields" => "all"));		
+		$term_list_name = $term_list[0]->name;
+		
+		$txtrequire = 'Information request for '.$term_list_name.' 203';
+	}
+?>
+
 
 
         <!-- MAIN CONTENT -->
@@ -73,10 +86,22 @@
         </div>        
         <!-- END #outermain -->
         <!-- END MAIN CONTENT -->
-        
+<?php
+	if( trim($txtrequire) != ''){
+?>
+<script>
+jQuery(document).ready(function(e) {
+    contact.init('<?php echo $txtrequire;?>');
+});
+</script>
+<?php		
+	}
+?>  
+
 		<?php
             get_template_part('tpl','footer'); 
         ?>         
 <?php 
 	get_footer();
 ?>
+

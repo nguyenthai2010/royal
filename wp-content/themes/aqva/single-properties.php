@@ -27,6 +27,8 @@
 				$term_list_name = $term_list[0]->slug;
 				$urlsite = get_site_url(); ;
 				$term_floor_name = $term_floor[0]->slug; 
+				
+				echo '123:'.add_query_arg( 'foo', 'bar' );
         ?> 
 
 		<?php endwhile; ?>
@@ -64,7 +66,7 @@
                                 <div class="one_fourth column description">
                                 	<h3><?php echo $description_text;?></h3>
                                     <p><?php echo $post->post_content;?></p>
-                                    <a class="button" href="<?php echo bloginfo('home')?>/contact">CONTACT US FOR MORE INFORMATION</a>
+                                    <a class="button" href="<?php echo bloginfo('home')?>/contact/?proID=<?php echo $post->ID;?>">CONTACT US FOR MORE INFORMATION</a>
                                 </div>
                                 <div class="clear"></div>
                             </section>

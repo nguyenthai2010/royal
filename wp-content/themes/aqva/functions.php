@@ -45,3 +45,10 @@
 	    $id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name = '".$slug."'AND post_type = 'page'");
 	    return $id;
 	}
+
+	add_filter('query_vars', 'parameter_queryvars' );
+	function parameter_queryvars( $qvars )
+	{
+		$qvars[] = 'proID';
+		return $qvars;
+	}
