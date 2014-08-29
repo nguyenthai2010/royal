@@ -23,10 +23,24 @@ var overview = (function() {
 			var link = jQuery(this).attr('link');
 			window.location.href = link;
         });
+		
+		//
+		jQuery(window).resize(function(e) {
+            respone();
+        });
+		respone();
 	}
 	
-	//FUNCTION
-	
+	//RESPONE
+	function respone(){
+		var w = jQuery('#maincontainer .container').width();
+		if(w > 900)
+			w = 900;
+		
+		var font = (w*14)/900;		
+		jQuery('.overview .overviewhotel').css('font-size', font + 'px' );
+
+	}
 	
 	//RETURN
 	return {

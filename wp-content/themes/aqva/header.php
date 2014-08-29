@@ -2,7 +2,8 @@
 <head>
 <meta charset="UTF-8" />
 <base href="<?php echo get_bloginfo('template_url');?>/"></base>
-<title>Royal | Just another Templatesquare Demo site</title>
+<title>Hotel &amp; Villas in the heart of Seminyak</title>
+
 <!-- Mobile Specific Metas
   ================================================== -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
