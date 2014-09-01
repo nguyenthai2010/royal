@@ -63,14 +63,15 @@ jQuery(window).load(function() {
 function runcameraslider(){
 	if(jQuery('#slideritems').length){
 		jQuery('#slideritems').camera({
-			height: '38.8%', /* to set the slider height */
-			fx: 'random', /* to set the slider effect */
+			height: '42%', /* to set the slider height */
+			fx: 'scrollLeft', /* to set the slider effect */
 			autoAdvance: true,
 			pagination: false,
 			navigation:true,
 			navigationHover: false,
 			playPause: false,
 			thumbnails: false,
+			transPeriod: 1000,
 			loader: 'none',
 			imagePath: '../images/'
 		});

@@ -1,7 +1,11 @@
 <?PHP
 	get_header();
 ?>
-
+<script>
+	jQuery(document).ready(function(){
+		overview.specificationScroll();
+	});
+</script>
 <body class="page page-template-default klasikt">
 
 <div id="bodychild">
@@ -52,7 +56,7 @@
 					                                	//print_r($speccategory);
 												?>
 												<li class="cat-item cat-item-2">
-													<a href="<?php echo get_the_permalink($speccategory->ID);?>" title="<?= $speccategory->post_title;?>"><?= $speccategory->post_title;?></a>
+													<a href="javascript:void(0);" data-link="spec_<?= $speccategory->ID;?>" title="<?= $speccategory->post_title;?>"><?= $speccategory->post_title;?></a>
 												</li>
 												<?php } ?>
 											</ul>
@@ -78,7 +82,7 @@
 											                                foreach ($querySpecifications as $specifications) {
 											                                	//print_r($specifications);
 																		?>
-																		<div class="padbottom30">
+																		<div class="padbottom30" id="spec_<?= $specifications->ID;?>">
 																			<h3 class="recent-title"><?= $specifications->post_title;?></h3>
 																			<?php echo $specifications->post_content;?>
 																		</div>

@@ -6,7 +6,13 @@ var overview = (function() {
 	function init(){
 		initEvent();
 	}
-	
+	function specificationScroll(){
+		jQuery('#sidebar li li a').click(function(){
+			var href = jQuery(this).attr('data-link');
+			jQuery('body, html').animate({ scrollTop: jQuery("#"+href).offset().top - 40 }, 800);
+			return false;
+		});
+	}
 	function initEvent(){
 		jQuery('.blockoverview').hover(
 			function(){
@@ -44,7 +50,8 @@ var overview = (function() {
 	
 	//RETURN
 	return {
-		init:init
+		init:init,
+		specificationScroll:specificationScroll
 	}
 	
 })();	

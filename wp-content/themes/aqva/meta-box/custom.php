@@ -104,3 +104,27 @@ function add_metaboxes_gallery( $meta_boxes ) {
     return $meta_boxes;
 }
 add_filter( 'cmb_meta_boxes', 'add_metaboxes_gallery' );
+
+
+function add_metaboxes_slider_selling( $meta_boxes ) {
+    $prefix = '_cmb_'; // Prefix for all fields
+    $meta_boxes['gallery_image'] = array(
+        'id' => 'gallery_image',
+        'title' => 'Image',
+        'pages' => array('slider'), // post type
+        'context' => 'normal',
+        'priority' => 'high',
+        'show_names' => false, // Show field names on the left
+        'fields' => array(
+            array(
+				'name' => __( 'Selling', 'cmb' ),
+				'desc' => __( 'Select selling.', 'cmb' ),
+				'id'   => $prefix . 'selling_slider',
+				'type' => 'checkbox'				
+            )
+        ),
+    );
+
+    return $meta_boxes;
+}
+add_filter( 'cmb_meta_boxes', 'add_metaboxes_slider_selling' );
