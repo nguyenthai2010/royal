@@ -57,6 +57,9 @@ jQuery(window).load(function() {
     runisotope();
 	runflexslider();
 	runcameraslider();
+	setTimeout(function(){
+		jQuery('.selling').css('opacity',1);
+	},1500);
 });
 
 //=================================== CAMERA SLIDER ===================================//
