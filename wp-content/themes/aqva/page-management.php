@@ -19,7 +19,7 @@
 	                		<h1 class="pagetitle"><?= the_title();?></h1>
 	                		<div class="pagedesc center">
 	                			<?php
-								$page = get_page_by_title( 'mangement' );
+								$page = get_page_by_title( 'management' );
 								$content = apply_filters('the_content', $page->post_content); 
 								echo $content;
 								?>
