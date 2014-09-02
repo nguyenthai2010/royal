@@ -18,9 +18,17 @@
                                     $i++;
 									$url = wp_get_attachment_url( get_post_thumbnail_id($slider->ID) );
 									$selling = get_post_meta($slider->ID, '_cmb_selling_slider', true);
+									$divsell = '';
+									if($selling == 'on'){
+										$divsell = '<div class="selling"></div>';
+									}else{
+										$divsell = '';	
+									}
                             ?>
-                                <div class="slider-img" data-src="<?php echo $url;?>"></div>
-                            <?php }?>                            
+                                <div class="slider-img" data-src="<?php echo $url;?>">
+                                	<?= $divsell;?>
+                                </div>
+                            <?php } ?>                            
 							</div>
                             <div class="clear"></div>
                         </section>
