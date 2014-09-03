@@ -66,7 +66,7 @@ jQuery(window).load(function() {
 function runcameraslider(){
 	if(jQuery('#slideritems').length){
 		jQuery('#slideritems').camera({
-			height: '42%', /* to set the slider height */
+			height: '43.5%', /* to set the slider height */
 			fx: 'scrollLeft', /* to set the slider effect */
 			autoAdvance: true,
 			pagination: false,

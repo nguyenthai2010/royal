@@ -198,9 +198,9 @@ function register_custom_post_specifications() {
 add_action( 'init', 'register_custom_post_reason_to_buy' );
 function register_custom_post_reason_to_buy() {	
 	$news_label = array(
-    'name' => _x('Reason To Buy', 'Reason To Buy'),
-    'singular_name' => _x('Reason To Buy', 'Reason To Buy'),
-    'add_new' => _x('Add New', 'Gallery'),
+    'name' => _x('Reason To Buy', 'Reasons To Buy'),
+    'singular_name' => _x('Reason To Buy', 'Reasons To Buy'),
+    'add_new' => _x('Add New', 'Reasons To Buy'),
     'add_new_item' => __('Add New'),
     'edit_item' => __('Edit '),
     'new_item' => __('Add New'),
@@ -210,7 +210,7 @@ function register_custom_post_reason_to_buy() {
     'not_found' =>  __('Not Find'),
     'not_found_in_trash' => __('Not Find in Trash'), 
     'parent_item_colon' => '',
-    'menu_name' => 'Reason To Buy'
+    'menu_name' => 'Reasons To Buy'
   );
   $news= array(
     'labels' => $news_label,

@@ -19,7 +19,7 @@
                 ?>
 
 				<div class="row">
-                	<div class="eight columns center">
+                	<div class="nine columns center">
                     <div id="afterheader">
 	<?php
 		$page_data = get_page_by_title( 'home' );

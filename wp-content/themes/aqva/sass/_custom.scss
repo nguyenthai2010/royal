@@ -15,7 +15,6 @@
 	}
 }
 
-
 /*listfloor*/
 .properties {
 	#outerafterheader {
@@ -31,17 +30,16 @@
 			text-align: center;
 			background: url(../images/pagetitle-line.png) no-repeat bottom;
 			margin: 10px 0 40px 0;
-			height: pxToEm(235px, $basefontsize);
+			height: 235px;
 			position: relative;
-			font-size: $basefontsize;
 			
 			img{
-				width: pxToEm(410px, $basefontsize);
-				margin-left: pxToEm(-205px, $basefontsize);
 				position:absolute;
 				top:0;
 				left:50%;
-				
+				margin-left: - 205px;
+				width: 410px;
+				height: 227px;
 				z-index: 1;
 				
 				&#properties_main{
@@ -50,27 +48,29 @@
 			}
 			
 			&.vip-apartments{
-				height: pxToEm(180px, $basefontsize);
+				height: 180px;
 				img {
-					margin-left: pxToEm(-226px, $basefontsize);
-					width: pxToEm(452px, $basefontsize);
+					margin-left: -226px;
+					width: 452px;
+					height: 146px;					
 				}
 			}	
 			
 			&.villas{
-				height: pxToEm(180px, $basefontsize);
+				height: 180px;
 				img {
-					margin-left: pxToEm(-167px, $basefontsize);
-					width: pxToEm(335px, $basefontsize);					
-				
+					margin-left: -167px;
+					width: 335px;
+					height: 154px;					
 				}
 			}
 			
 			&.townhouses{
-				height: pxToEm(160px, $basefontsize);
+				height: 160px;
 				img {
-					margin-left: pxToEm(-112px, $basefontsize);
-					width: pxToEm(225px, $basefontsize);					
+					margin-left: -112px;
+					width: 225px;
+					height: 138px;					
 				}
 			}	
 		}
@@ -200,47 +200,3 @@
 		}	
 	}
 }
-
-.nounderline{ text-decoration:none !important;}
-
-@media only screen  and (max-width: 767px) {
-	.properties {
-		#outerafterheader {
-
-			.term_list_img {
-				img{
-					margin-left: 0;
-					top:0;
-					left:0;
-				}
-				
-				&.vip-apartments{
-					height: pxToEm(180px, $basefontsize);
-					img {
-						margin-left: 0;
-						width: pxToEm(452px, $basefontsize);
-					}
-				}	
-				
-				&.villas{
-					height: pxToEm(180px, $basefontsize);
-					img {
-						margin-left: 0;
-						width: pxToEm(335px, $basefontsize);					
-					
-					}
-				}
-				
-				&.townhouses{
-					height: pxToEm(160px, $basefontsize);
-					img {
-						margin-left: 0;
-						width: pxToEm(225px, $basefontsize);					
-					}
-				}	
-			}
-		}
-	}
-	
-}
-	
