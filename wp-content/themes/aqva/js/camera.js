@@ -19,7 +19,9 @@
 		easing				: 'easeInOutExpo',	//for the complete list http://jqueryui.com/demos/effect/easing.html
 		
 		mobileEasing		: '',	//leave empty if you want to display the same easing on mobile devices and on desktop etc.
-		
+		fxPrev				: 'scrollRight',
+		fxNext				: 'scrollLeft',
+		statusNavigation	: 0,
 		fx					: 'random',	//'random','simpleFade', 'curtainTopLeft', 'curtainTopRight', 'curtainBottomLeft', 'curtainBottomRight', 'curtainSliceLeft', 'curtainSliceRight', 'blindCurtainTopLeft', 'blindCurtainTopRight', 'blindCurtainBottomLeft', 'blindCurtainBottomRight', 'blindCurtainSliceBottom', 'blindCurtainSliceTop', 'stampede', 'mosaic', 'mosaicReverse', 'mosaicRandom', 'mosaicSpiral', 'mosaicSpiralReverse', 'topLeftBottomRight', 'bottomRightTopLeft', 'bottomLeftTopRight', 'bottomLeftTopRight'
 										//you can also use more than one effect, just separate them with commas: 'simpleFade, scrollRight, scrollBottom'
 
@@ -1068,6 +1070,7 @@
 	/*************************** FUNCTION nextSlide() ***************************/
 	
 	function nextSlide(navSlide){ 
+		//console.log(defaults.fxPrev);
 		elem.addClass('camerasliding');
 		
 		videoPresent = false;
@@ -1161,7 +1164,15 @@
 			
 			
 			var dataFx = $(' > div',elem).eq(slideI).attr('data-fx');
-				
+			
+			if(defaults.statusNavigation == 1) //aaa
+				dataFx = defaults.fxPrev;
+			else if(defaults.statusNavigation == 2){
+				dataFx = defaults.fxNext;
+			}
+			
+			defaults.statusNavigation == 0;
+			
 			if(isMobile()&&opts.mobileFx!=''&&opts.mobileFx!='default'){
 				fx = opts.mobileFx;
 			} else {
@@ -2090,8 +2101,9 @@
 							imgFake();
 							$('#'+pieID+', .camera_canvas_wrap',wrap).animate({opacity:0},0);
 							canvasLoader();
+							defaults.statusNavigation = 1;
 							if(idNum!=0){
-								nextSlide(idNum);
+								nextSlide(idNum); //aaa
 							} else {
 								nextSlide(amountSlide);
 						   }
@@ -2108,6 +2120,7 @@
 							imgFake();
 							$('#'+pieID+', .camera_canvas_wrap',camera_thumbs_wrap).animate({opacity:0},0);
 							canvasLoader();
+							defaults.statusNavigation = 2;
 							if(idNum==amountSlide-1){
 								nextSlide(1);
 							} else {
