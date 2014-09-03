@@ -4,7 +4,7 @@ var contact = (function() {
 
 	//INIT
 	function init(str){
-		jQuery('input[name="your-name"]').val(str);
+		jQuery('input[name="your-subject"]').val(str);
 	}
 	
 	//FUNCTIONS

@@ -37,7 +37,7 @@
 		<div id="outerafterheader">
         	<div class="container">
             	<div class="row">
-                	<div class="twelve columns">
+                	<div class="twelve columns main-<?php echo $term_list_name;?>">
                         <div id="afterheader">
                             <h1 class="pagetitle"><?php echo $term_list[0]->name;?></h1>
                             <div class="listfloor">

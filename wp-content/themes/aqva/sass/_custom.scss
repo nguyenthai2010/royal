@@ -18,18 +18,21 @@
 /*listfloor*/
 .properties {
 	#outerafterheader {
+		
 		#afterheader {
 			margin-bottom: 0;
+			padding-bottom: 26px;
 		}
 		
 		.noting {
 			text-align: center;
+			font-size: 12px;
 		}
 		
 		.term_list_img {
 			text-align: center;
 			background: url(../images/pagetitle-line.png) no-repeat bottom;
-			margin: 10px 0 40px 0;
+			margin: 15px 0 55px 0;
 			height: 235px;
 			position: relative;
 			
@@ -57,16 +60,18 @@
 			}	
 			
 			&.villas{
-				height: 180px;
+				height: 167px;
 				img {
 					margin-left: -167px;
 					width: 335px;
-					height: 154px;					
+					height: 130px;					
 				}
 			}
 			
 			&.townhouses{
 				height: 160px;
+				margin-top: 24px;
+				
 				img {
 					margin-left: -112px;
 					width: 225px;
@@ -74,6 +79,31 @@
 				}
 			}	
 		}
+		
+		.main-villas {
+			.listfloor {
+				display: none;
+			}
+		}
+		
+		.main-townhouses {
+			.listfloor {
+				display: none;
+			}
+		}
+		
+		.main-suite-apartments {
+			#afterheader {
+				padding-bottom: 7px;	
+			}
+		}
+		
+		.main-vip-apartments {
+			#afterheader {
+				padding-bottom: 7px;	
+			}
+		}
+		
 	}
 	
 	#outermain {
