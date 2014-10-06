@@ -19,8 +19,9 @@
 	                		<h1 class="pagetitle"><?= the_title();?></h1>
 	                		<div class="pagedesc center">
 	                			<?php
-								$page = get_page_by_title( 'reason-tobuy' );
-								$content = apply_filters('the_content', $page->post_content); 
+								$page = get_page_id_by_slug( 'reason-tobuy' );
+								$p_reason = get_post($page); 
+								$content = apply_filters('the_content', $p_reason->post_content); 
 								echo $content;
 								?>
 	                		</div>
