@@ -39,6 +39,7 @@ var addthis_product = 'wpp-265';
 <script type='text/javascript' src='themes/klasik/js/jquery.easing.1.3.js?ver=1.3'></script>
 <script type='text/javascript' src='themes/klasik/js/tinynav.min.js?ver=1.0'></script>
 <script type='text/javascript' src='themes/klasik/js/retina-1.1.0.min.js?ver=1.1.0'></script>
+<script type='text/javascript' src='js/class.mobileIos.js'></script>
 <script type='text/javascript' src='js/camera.js?ver=1.3.3'></script>
 <script type='text/javascript' src='js/custom.js?ver=1.0'></script>
 <script type='text/javascript' src='js/jquery.isotope.min.js?ver=1.5.19'></script>
