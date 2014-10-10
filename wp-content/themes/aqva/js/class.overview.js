@@ -25,16 +25,19 @@ var overview = (function() {
 	    });
 	}
 	function initEvent(){
-		jQuery('.blockoverview').hover(
-			function(){
-				var pic = jQuery(this).attr('pic');
-				jQuery(pic).addClass('active');
-			},
-			function(){
-				var pic = jQuery(this).attr('pic');
-				jQuery(pic).removeClass('active');
-			}
-		);
+		if(!DetectIphoneOrIpod()){
+			jQuery('.blockoverview').hover(
+				function(){
+					var pic = jQuery(this).attr('pic');
+					jQuery(pic).addClass('active');
+				},
+				function(){
+					var pic = jQuery(this).attr('pic');
+					jQuery(pic).removeClass('active');
+				}
+			);
+
+		}
 		
 		jQuery('.blockoverview').click(function(e) {
 			var link = jQuery(this).attr('link');
